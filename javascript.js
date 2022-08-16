@@ -3,7 +3,8 @@ var botondesencriptar =document.querySelector(".desencriptar");
 var botoncopiar=document.querySelector(".boton-copiar")
 var imgMunheco = document.querySelector(".imagen1");
 var imgMunheco2 = document.querySelector(".imagen2");
-var resultadotexto = document.querySelector(".caja-resultado");
+var resultadotexto = document.querySelector(".resultado");
+
 
 botonencriptar.onclick=encriptar;
 botondesencriptar.onclick=desencriptar;
@@ -24,12 +25,22 @@ function desencriptar(){
 
 
 
-
+function copiar(){
+    var resultadotexto = document.querySelector(".resultado");
+    var seleccion = document.createRange();
+    seleccion.selectNodeContents(resultadotexto);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(seleccion);
+    document.execCommand('copy');
+    window.getSelection().removeRange(seleccion);
+    alert("mensaje copiado")
+}
 
 function cajaRecuperada(){
     var texto = document.querySelector(".input-text__area");
     return texto.value;
 }
+
 
 function imgOcultar(){
     imgMunheco.classList.add("ocultar");
@@ -37,6 +48,7 @@ function imgOcultar(){
 }
 
 function encriptarArea(mensaje){
+
     var texto = mensaje;
     var textofinal = "";
 

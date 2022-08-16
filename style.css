@@ -1,21 +1,18 @@
 body{
     background: #E5E5E5;
-    
 }
 
 .area-texto__logo{
     display: inline-block;
     width: 10vw;
     height: 100vh;
-
-
 }
 
 .imagen0{
     margin: 40px 0px 0px 30px;
 }
+
 .input-text{
-   /* background-color: #0A3871;*/
     display: inline-block;
     position: absolute;
     box-sizing: border-box;
@@ -23,11 +20,10 @@ body{
     height: 100vh;
 }
 
-
 .input-text__area{
     width: 50vw;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-left: 5vw;
     margin-top: 15vh;
     outline: none;
@@ -40,6 +36,7 @@ body{
     border-color: #E5E5E5;
     
 }
+
 ::placeholder{
     color: #0A3871;
 }
@@ -80,15 +77,13 @@ body{
     transition: 1s;
 }
 .copiar{
-    /*background-color: aqua;*/
     margin-left: 60vw;
     display: inline-block;
     position: absolute;
     width: 29vw;
     height: 100vh;
     box-sizing: border-box;
-    overflow: hidden;
-    /*background-color: green;*/
+    overflow: auto;
 }
 
 .imagen1{
@@ -107,27 +102,21 @@ body{
 }
 
 .caja-resultado{
-    display: inline-block;
-    margin: 3em 2.3em 6em 2em;
+   
+    margin: 3em 2.3em 2.5em 2em;
     border-radius: 2em;
     background-color: white;
     padding: 1em;
-    height: 20em;
+    height: 40em;
     width: 20em;
     box-sizing: border-box;
+    overflow-wrap: break-word;
+   
     
 }
-
-.resultado{
-    font-size: 40px;
-}
-
-
-
-
 .boton-copiar{
     position: absolute;
-    margin-left: 7.5vw;
+    margin-left: 5vw;
     padding: 1vh;
     width: 17vw;
     height: 10vh;
@@ -140,100 +129,29 @@ body{
     color: #0A3871; 
     transition: 1s;
 }
-
 .ocultar{
     display: none;
 }
 
+.mostrar{
+    display:block
+}
+.foot{
+    left:45vw;
+    bottom: 5vh;
+    position: absolute;
+    
+}
+
+::-webkit-scrollbar{
+    background-color: #E5E5E5;
+}
 .boton-copiar:hover, .encriptar:hover, .desencriptar:hover{
     height: 12vh;
     width: 19vw;
     cursor: pointer;
 }
-/*
-h1 img{
-    position: absolute;
-    margin: 40px 0 0 84px;
-}
 
-
-.area-texto{
-    position: absolute;
-    margin: 168px 520px 0 240px;
-    width: 680px;
+.input-text__area:focus{
+    background-color: #afcdf544;
 }
-
-.area-texto textarea{
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    outline: none;
-    resize: none;
-    font-size: 32px;
-    font-family: 'Inter';
-    color: #0A3871;
-    max-height: 288px;
-    background: #E5E5E5;
-    border-color: #E5E5E5;
-    
-}
-::placeholder{
-    color: #0A3871;
-}
-
-textarea:is(:focus, :invalid){
-    border-color: white;
-}
-
-textarea::-webkit-scrollbar{
-    width: 0px;
-
-}
-
-#encriptar {
-    position: absolute;
-    margin: 550px 0 72px 240px;
-    padding: 24px;
-    width: 328px;
-    height: 67px;
-    background: #0A3871;
-    border-radius: 24px;
-    font-family: 'Inter';
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-}
-#desencriptar {
-    position: absolute;
-    margin: 550px 0 72px 592px;
-    padding: 24px;
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    border-color: #0A3871;
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #0A3871;   
-}
-#encriptar:hover{
-    background-color: #0A3899;
-}
-#desencriptar:hover{
-    background-color: #cecec2;
-}
-
-#copiar {
-    position: absolute;
-    margin:40px 40px 40px 1000px;
-    border-color: #E5E5E5;
-}
-
-.imagen1{
-    margin: 103px 32px 40px 0px;
-}
-
-.ocultar{
-    display:none;
-}*/
